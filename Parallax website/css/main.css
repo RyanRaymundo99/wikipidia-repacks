@@ -1,0 +1,240 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    overflow-x: hidden;
+    min-width: 100vh;
+    background: linear-gradient(#2b1055,#7597de);
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+
+.logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon
+{
+    mix-blend-mode: screen;
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+
+#text
+{
+    position: absolute;
+    right: -350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    overflow: hidden;
+}
+
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    transform: translateY(100px);
+}
+
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #2b1055;
+}
+.sec h2
+{
+    padding-top: 30px;
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.sec p
+{
+    font-size: 1.1em;
+    color: rgb(206, 202, 202);
+    max-width: 700px;
+    padding-bottom: 50px;
+}
+
+.sec .pimg  img
+{   
+    position: relative;
+    right: 20px;
+    right: -60px;
+    
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+.flex-container > div {
+    background: #5d27b4;
+    width: 200px;
+    margin: 16px;
+    text-align: center;
+    line-height: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 9px #6200ff;
+}
+
+.flex-container div img
+{
+    width: 150px;
+    height: 120px;
+    
+}
+.flex-container div h4
+{
+    color: #fff;
+}
+
+
+footer
+{
+    padding: 10px 0;
+    text-decoration: none;
+    background: linear-gradient(to bottom,#4e0161,rgb(27, 26, 26));
+}
+
+
+footer a
+{
+    letter-spacing: 2px;
+    font-size: 23px;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(204, 202, 202);
+}
+
+.bx
+{
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+.footericons
+{
+    display: inline-block;
+    margin-top: 9px;
+    margin-left: 75px;
+}
+
+.homesection
+{
+    padding-bottom: 60px;
+    text-align: center;
+    margin-top: -40px;
+    text-decoration: none;
+    list-style-type:none;
+    padding-bottom: 20px;
+
+}
+.homesection li a
+{
+    padding-bottom: 20px;
+}
+
+.wiki
+{
+    position: absolute;
+    left: 1100px;
+    top: 3940px;
+    padding-right: 40px;
+}

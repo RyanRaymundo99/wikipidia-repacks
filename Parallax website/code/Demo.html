@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Demo.css">
+    <title>Demo</title>
+</head>
+<body>
+    
+    <section>
+        <div>
+            <img src="/animations-images/clowns.png" alt="clowns"         id="clowns">
+            <img src="/animations-images/Vegetation.png" alt="vegetation" id="vegetation">
+            <img src="/animations-images/Ground.png" alt="Ground"         id="ground">
+        </div>
+    </section>
+
+
+    <script>
+        let clowns = document.getElementById('clowns')
+        let ground = document.getElementById('ground')
+        let vegetation = document.getElementById('vegetation')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            clowns.style.left = value * 0.06 + 'px';
+            ground.style.width = value + 3 + 'px';
+            vegetation.style.left = value * 0.09 + 'px';
+        })
+    </script>
+</body>
+</html>

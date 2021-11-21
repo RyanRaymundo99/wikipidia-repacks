@@ -1,0 +1,49 @@
+*
+{
+    margin: 30px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    overflow-x: hidden;
+    background: #2b1055;
+    height: 10000px;
+}
+
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#ground
+{
+    z-index: 10;
+}
+
+section img#ground
+{
+    
+}
